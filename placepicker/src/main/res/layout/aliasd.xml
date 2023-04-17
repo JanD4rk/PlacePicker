@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/marker_image_view"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="47dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_marginBottom="47dp"-->
+<!--        android:elevation="2dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/ic_map_marker"-->
+<!--        />-->
+
+
+    <ImageView
+        android:id="@+id/marker_shadow_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="1dp"
+        app:layout_constraintRight_toRightOf="@id/marker_image_view2"
+        app:layout_constraintStart_toStartOf="@id/marker_image_view2"
+        app:layout_constraintTop_toTopOf="@+id/marker_image_view2"
+        app:srcCompat="@drawable/marker_shadow"
+        />
+
+
+
+    <ImageView
+        android:id="@+id/marker_image_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="47dp"
+        android:elevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/marker_image_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_map_marker"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
